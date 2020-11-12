@@ -137,7 +137,7 @@ mod tests {
     #[test]
     fn test_inc_at_pointer() {
         let mut pointer: usize = 0;
-        let mut memory: [i32; 30000] = [0; 30000];
+        let mut memory: [u8; 30000] = [0; 30000];
 
         inc_at_pointer(&mut pointer, &mut memory);
 
@@ -147,7 +147,7 @@ mod tests {
     #[test]
     fn test_dec_at_pointer() {
         let mut pointer: usize = 0;
-        let mut memory: [i32; 30000] = [1; 30000];
+        let mut memory: [u8; 30000] = [1; 30000];
 
         dec_at_pointer(&mut pointer, &mut memory);
 
